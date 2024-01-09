@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ Comercial</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="img/logoMJ/logoMJsinfondoHD.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.servicios.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-d5IQeQV5EGlv8RZ4tFbARej3Fgj2ZI9qoRLGMwSjC9e6ejPUhSlfo5kwtnULvFeM"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    .navbar-dark-on-scroll {
+      background-color: #ffffff !important;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      // Manejar el cierre del menú desplegable en dispositivos móviles
+      $(".navbar-nav a").on("click", function () {
+        $(".navbar-toggler").attr("aria-expanded", "false");
+        $(".navbar-collapse").removeClass("show");
+      });
+
+      // Cambiar la apariencia del navbar al hacer scroll
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('navbar-dark-on-scroll');
+        } else {
+          $('.navbar').removeClass('navbar-dark-on-scroll');
+        }
+      });
+
+      // Asegurar que el estilo se aplique al cargar la página
+      if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('navbar-dark-on-scroll');
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <navbar style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-transparent"
+      style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="img/logoMJ/logoMJsinfondoHD1.png" alt="Logo" width="40" height="28"
+            class="d-inline-block align-text-top">
+          COMERCIAL
+        </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/empresa.html">Empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer-info-contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+  </navbar>
+
+  <section>
+    <div class="banner-servicios">
+      <img src="/img/servicios/banner-servicios.png" alt="Banner de servicios">
+    </div>
+  </section>
+
+  <div class="intro-desarrollo">
+
+    <h2>DESARROLLO Y SERVICIO</h2>
+    <p>
+      MJ COMERCIAL busca ir más allá que
+      una relación de cliente – fabricante,
+      queremos ser su mejor aliado en los
+      negocios, para impulsar sus proyectos
+      y objetivos personales o empresariales.
+
+    </p>
+    <p>
+      Antes de poner en marcha el proyecto,
+      escuchamos su necesidad y el propósito
+      o finalidad del mismo, para actuar
+      conforme a eso.
+    </p>
+
+  </div>
+
+  <section>
+    <div class="iconos-servicios">
+      <a>
+        <img src="img/index/icon.fabricacion.png" alt="">
+        <p>Fabricación </p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.reparacion.png" alt="">
+        <p>Reparación</p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.mantenimiento.png" alt="">
+        <p>Mantenimiento</p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.ventas.png" alt="">
+        <p>Ventas</p>
+        </img>
+      </a>
+    </div>
+  </section>
+
+
+  <div class="cartas-vagones">
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon tolva pedrero.png" class="card-img-top" alt="Vagon tolva pedrero">
+      <div class="card-body">
+        <h5 class="card-title">Vagon Tolva Pedrero</h5>
+        <p class="card-text">Los vagones tolva abiertos se utilizan para el transporte de piedra para construcción o
+          balasto para el mantenimiento de la infraestructura ferroviaria.</p>
+        <a href="img/servicios/vagon tolva pedrero info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon todo puertas.png" class="card-img-top" alt="Vagon todo puertas">
+      <div class="card-body">
+        <h5 class="card-title">Vagon todo puertas</h5>
+        <p class="card-text">Transformación de vagón de carga general a vagón todo puertas, sistema de gran apertura,
+          con flexibilidad para transportar cargas de diversos tamaño.</p>
+        <a href="img/servicios/vagon todo puertas info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon tanque.png" class="card-img-top" alt="Vagon Tanque">
+      <div class="card-body">
+        <h5 class="card-title">Vagon Tanque</h5>
+        <p class="card-text">Los vagones cisterna o vagones tanque estan destinados al transporte de productos liquidos.
+        </p>
+        <a href="img/servicios/vagon tanque info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon para coque.png" class="card-img-top" alt="Vagon para Coque">
+      <div class="card-body">
+        <h5 class="card-title">Vagon para Coque</h5>
+        <p class="card-text">Estos vagones de carga abiertos se emplean atendiendo a la industria del petroleo para el
+          transporte del carbon y coque.</p>
+        <a href="img/servicios/vagon para coque info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon portacontenedor.png" class="card-img-top" alt="Vagon Portacontenedor">
+      <div class="card-body">
+        <h5 class="card-title">Vagon Portacontenedor</h5>
+        <p class="card-text">Los vagones plataforma para transporte de contenedores , facilitan la intermodalidad
+          mediante la conexion con camiones y otros medios de transporte.</p>
+        <a href="img/servicios/vagon portacontenedor info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon granero.png" class="card-img-top" alt="Vagon granero">
+      <div class="card-body">
+        <h5 class="card-title">Vagon Granero</h5>
+        <p class="card-text">Transformacion de vagon de carga general para transporte de cereales y harinas con carga
+          superior.</p>
+        <a href="img/servicios/vagon granero info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/vagon para balasto.png" class="card-img-top" alt="Vagon para balasto">
+      <div class="card-body">
+        <h5 class="card-title">Vagon para Balasto</h5>
+        <p class="card-text">Transformacion de vagon "borde alto" para transporte de balasto con unidades de descarga
+          inferiores utilizados en trenes de trabajo para la construccion de infraestructura ferroviaria.</p>
+        <a href="img/servicios/vagon para balasto info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/bogie trocha ancha.png" class="card-img-top" alt="Bogie trocha ancha">
+      <div class="card-body">
+        <h5 class="card-title">Bogie Trocha ancha</h5>
+        <p class="card-text">Bogies trochas 1676 mm (ancha)/ 1435 mm (media)/ 1000 mm (agosta), construidos de chapa
+          soldada con sistema de control de marcha.</p>
+        <a href="img/servicios/bogie trocha ancha info.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="separador-repuestos">
+    <h2>REPUESTOS FERROVIARIOS</h2>
+  </section>
+  <br>
+
+  <div class="imagen-respuestos-ferroviarios">
+    <img src="img/servicios/repuestos ferroviarios.png" alt="detalle de repuestos ferroviarios">
+  </div>
+
+  <div class="cartas-vagones">
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/barcazas minerales.png" class="card-img-top" alt="barcazas minerales">
+      <div class="card-body">
+        <h5 class="card-title">Barcazas Minerales</h5>
+        <p class="card-text">Proyecto industrial ferro naval. Fabricaciones de bloques articulada con una logistica en
+          artillero para armado y botadura de las barcazas.</p>
+        <a href="img/servicios/barcazas minerales.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/tanques australianos.png" class="card-img-top" alt="Tanques australianos">
+      <div class="card-body">
+        <h5 class="card-title">Tanques australianos</h5>
+        <p class="card-text">Tanque australiano desmontable de chapa soldada con su sistema de anclajes para permitir el
+          armado in situ y su reubicacion, destinado a la industria minera.</p>
+        <a href="img/servicios/tanques australianos.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/mixers verticales.png" class="card-img-top" alt="Mixers verticales">
+      <div class="card-body">
+        <h5 class="card-title">Mixers Verticales</h5>
+        <p class="card-text">Fabricacion de cuba para mixer vertical agromec de 14 m3.</p>
+        <a href="img/servicios/mixers verticales.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+
+    </div>
+    <div class="card" style="width: 33rem;">
+      <img src="img/servicios/puentes ferroviarios.png" class="card-img-top" alt="Puentes ferroviarios">
+      <div class="card-body">
+        <h5 class="card-title">Puentes Ferroviarios</h5>
+        <p class="card-text">Arroyo Moron/ linea Urquiza/ linea San Martin 36 y 40 m de largo construidos integramente
+          en la planta.</p>
+        <a href="img/servicios/puentes ferroviarios.png" class="btn btn-primary">Mas detalles</a>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <section>
+    <div class="banner-planta-puerta">
+      <img src="/img/servicios/banner planta exterior.png" alt="Banner de planta">
+    </div>
+  </section>
+
+  <footer id="footer-info-contacto" class="footer-section">
+
+    <div class="footer-contacto-planta">
+      <h3>PLANTA INDUSTRIAL</h3>
+      <p>Av. Bautista Buriasco 41 - (2445)</p>
+      <p>María Juana - Santa Fe - Argentina</p>
+      <p>Tel.: (54-03406) 471-214 /471-414/ 471-682</p>
+      <p>E-mail: abastecimientoplanta@mjcomercial.com.ar</p>
+    </div>
+
+    <div class="footer-contacto-admin">
+      <h3>ADMINISTRACION Y VENTAS</h3>
+      <p>Av. Libertador 13687 - 1º piso- (1640)</p>
+      <p>Martínez - Buenos Aires - Argentina</p>
+      <p>Tel.: 4792-5505</p>
+      <p>E-mail: info@mjcomercial.com.ar</p>
+
+    </div>
+
+  </footer>
+
+  <div class="footer-creds">
+    <img src="/img/logoMJ/logoMJsinfondoHD.png" alt="Logo de empresa MJ">
+    <p>©Copyright 2023 - mjcomercial.com.ar - Todos los derechos reservados.</p>
+    <p>Las marcas y nombres comerciales mencionados pertenecen a sus respectivos propietarios.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MJ Comercial</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="img/logoMJ/logoMJsinfondoHD.png" type="image/x-icon">
+  <link rel="stylesheet" href="style-index.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-d5IQeQV5EGlv8RZ4tFbARej3Fgj2ZI9qoRLGMwSjC9e6ejPUhSlfo5kwtnULvFeM"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    .navbar-dark-on-scroll {
+      background-color: #ffffff !important;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      // Manejar el cierre del menú desplegable en dispositivos móviles
+      $(".navbar-nav a").on("click", function () {
+        $(".navbar-toggler").attr("aria-expanded", "false");
+        $(".navbar-collapse").removeClass("show");
+      });
+
+      // Cambiar la apariencia del navbar al hacer scroll
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('navbar-dark-on-scroll');
+        } else {
+          $('.navbar').removeClass('navbar-dark-on-scroll');
+        }
+      });
+
+      // Asegurar que el estilo se aplique al cargar la página
+      if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('navbar-dark-on-scroll');
+      }
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".ubicacion-right .view-button").click(function () {
+        // Abre la imagen en pantalla completa
+        $("body").append('<div class="overlay"><div class="overlay-content"><img src="img/img puntos fronterizos.png" class="full-image"><button class="close-overlay">Cerrar</button></div></div>');
+      });
+
+      $("body").on("click", ".close-overlay", function () {
+        // Cierra la vista en pantalla completa
+        $(".overlay").remove();
+      });
+    });
+
+  </script>
+
+</head>
+
+<body>
+  <header>
+
+    <navbar style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary navbar-transparent"
+        style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="img/logoMJ/logoMJsinfondoHD1.png" alt="Logo" width="40" height="28" class="d-inline-block align-text-top">
+            COMERCIAL
+          </a>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer-info-contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </navbar>
+
+
+
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner carousel-img-size">
+        <div class="carousel-item active">
+          <img src="img/index/img vagon 1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2><span class="titulo-parrafo">PRIMERA FABRICA ARGENTINA DE VAGONES FERROVIARIOS</span></h2>
+            <br>
+            <P>Nos impulsa la pasión por lo que hacemos.</P>
+            <img src="img/logoMJ/logoMJsinfondoHD1.png">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/img vagon 2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2><span class="titulo-parrafo">PRIMERA FABRICA ARGENTINA DE VAGONES FERROVIARIOS</span></h2>
+            <br>
+            <P>Estamos a la altura de los nuevos desafíos que los veloces cambios
+              de nuestro tiempo traen a la industria ferroviaria.</P>
+              <img src="img/logoMJ/logoMJsinfondoHD1.png">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/img interior fabrica 1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2><span class="titulo-parrafo">PRIMERA FABRICA ARGENTINA DE VAGONES FERROVIARIOS</span></h2>
+
+            <br>
+            <P>Nuestra experiencia
+              habla de producción, modernización
+              y servicio al cliente.</P>
+              <img src="img/logoMJ/logoMJsinfondoHD1.png">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </header>
+
+
+  <section class="separador-quienes-somos">
+    <h2>QUIÉNES SOMOS</h2>
+  </section>
+  <br>
+
+  <section class="nosotros-section">
+    <div class="nosotros-section-left">
+      <img class="borde-oscuro" src="img/index/img exterior planta.png" alt="...">
+    </div>
+    <div class="nosotros-section-right">
+      <h3>NOSOTROS</h3>
+      <p>MJ COMERCIAL S.A. construye en la original planta industrial de
+        S.A. BAUTISTA BURIASCO e HIJOS Ltda., empresa que inició en el
+        año 1951 la fabricación de vagones ferroviarios en Argentina
+        convirtiéndose en la empresa pionera y líder en nuestro país en su
+        rubro y una de las principales proveedoras de material ferroviario.
+
+      <div class="datos-planta">
+        <p>SUPERFICIE PREDIO <br>120.000 m2 </p>
+        <p>DESVIO FERROVIARIO <br>TROCHA 1676 </p>
+        <p>SUPERFICIE CUBIERTA <br>30.000 m2 </p>
+        <p>VIAS INTERIORES <br>5.000 m</p>
+      </div>
+      <a href="/empresa.html" class="button"> NUESTRA EMPRESA</a>
+      </p>
+    </div>
+
+  </section>
+
+  <br>
+  <section class="separador-servicios">
+    <h2>Categorías de Servicios</h2>
+  </section>
+  <br>
+
+  <section>
+    <div class="iconos-servicios">
+      <a>
+        <img src="img/index/icon.fabricacion.png" alt="">
+        <p>Fabricación </p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.reparacion.png" alt="">
+        <p>Reparación</p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.mantenimiento.png" alt="">
+        <p>Mantenimiento</p>
+        </img>
+      </a>
+      <a>
+        <img src="img/index/icon.ventas.png" alt="">
+        <p>Ventas</p>
+        </img>
+      </a>
+    </div>
+    <div class="section-button-servicios">
+      <a href="/servicios.html" class="button"> CONOZCA NUESTROS SERVICIOS</a>
+    </div>
+
+  </section>
+
+  <br>
+  <section class="separador-iconos-clientes">
+    <h2>Algunos de nuestros clientes</h2>
+  </section>
+  <br>
+
+
+  <section class="section logos-section">
+    <div class="slider">
+      <div class="slider-track">
+        <div>
+          <img src="img/index/icono.nuevo.central.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.agromec.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.belgrano.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.ferrosur.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.nca.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.pauny.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.ternium.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.trenes.argentinos.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.ypf.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.btu.jpg" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.rottio.png" alt="" class="slide" height="100" width="250">
+        </div>
+        <div>
+          <img src="img/index/icono.nuevo.central.png" alt="" class="slide" height="100" width="250">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="ubicacion-puntosFronterizos">
+
+      <div class="ubicacion-left">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.58328237453!2d-61.758951073175886!3d-31.672618790930873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caedafdb079627%3A0x7c6685638ab20e0f!2sMJ%20Comercial!5e0!3m2!1ses!2sar!4v1704289349005!5m2!1ses!2sar"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="ubicacion-right">
+        <div class="zoomable-image-container">
+          <img src="img/img puntos fronterizos.png" alt="Puntos fronterizos de la fabrica" class="zoomable-image">
+          <button class="view-button">Ver</button>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <footer id="footer-info-contacto" class="footer-section">
+
+    <div class="footer-contacto-planta">
+      <h3>PLANTA INDUSTRIAL</h3>
+      <p>Av. Bautista Buriasco 41 - (2445)</p>
+      <p>María Juana - Santa Fe - Argentina</p>
+      <p>Tel.: (54-03406) 471-214 /471-414/ 471-682</p>
+      <p>E-mail: abastecimientoplanta@mjcomercial.com.ar</p>
+    </div>
+
+    <div class="footer-contacto-admin">
+      <h3>ADMINISTRACION Y VENTAS</h3>
+      <p>Av. Libertador 13687 - 1º piso- (1640)</p>
+      <p>Martínez - Buenos Aires - Argentina</p>
+      <p>Tel.: 4792-5505</p>
+      <p>E-mail: info@mjcomercial.com.ar</p>
+
+    </div>
+
+
+   
+  </footer>
+
+    <div class="footer-creds">
+      <img src="/img/logoMJ/logoMJsinfondoHD.png" alt="Logo de empresa MJ">
+      <p>©Copyright 2023 - mjcomercial.com.ar - Todos los derechos reservados.</p>
+      <p>Las marcas y nombres comerciales mencionados pertenecen a sus respectivos propietarios.</p>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

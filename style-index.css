@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html * {
+  margin: 0;
+  padding: 0;
+
+}
+
+/**************************************** ESTILOS PARA EL NAVBAR ***************************************/
+.navbar {
+  /*background-color:rgb(255, 255, 255);  Cambia "yourColor" al color de fondo deseado */
+  background-color: transparent !important;
+  color: #ffffff !important;
+  /* Letras blancas en estado inicial */
+  font-family: CeraPro, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+  font-size: 1.3vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000 !important;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo para los elementos del menú */
+.navbar-nav .nav-item .nav-link {
+  color: rgb(0, 0, 0);
+  /* Cambia "tuColor" al color de texto deseado */
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Establece el estilo para el navbar cuando haces scroll */
+.navbar-dark-on-scroll .navbar {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  /* Letras negras al hacer scroll */
+}
+
+/* Estilo para las letras del menú al hacer scroll */
+.navbar-dark-on-scroll .navbar-light .navbar-nav .nav-link {
+  color: #000000 !important;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
+  color: rgb(0, 0, 0) !important;
+
+  /* Letras blancas en estado inicial */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-item .nav-link.active {
+  color: rgb(255, 255, 255);
+  /* Cambia "otroColor" al color deseado para el enlace activo */
+}
+
+/* Estilo para el botón de alternancia en dispositivos móviles */
+.navbar-toggler-icon {
+  background-color: transparent;
+  /* Cambia "colorBoton" al color deseado para el botón de alternancia */
+}
+
+
+/********************************************* ESTILO PARA EL CAROUSEL ***************************************/
+
+#carouselExampleAutoplaying {
+  /*  display: flex;
+  flex-wrap: nowrap; width: 100%;*/
+  /*max-width: 100%;
+  overflow: hidden;
+  /* height: auto;*/
+  /* Establece la altura fija para todas las imágenes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+  flex: auto;
+  width: auto;
+  /*height: 47vw;*/
+  height: 100vh;
+  /*Ajusta al total de la Ventana en todos los dispositivos*/
+  max-width: 100%;
+  /*Ajusta el ancho máximo según tus necesidades */
+  max-height: 100%;
+  /*Ajusta la altura automáticamente para mantener la proporción*/
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor*/
+  /*align-items: center;*/
+  /*background-size: cover;*/
+  /*flex-wrap: nowrap;*/
+  /*overflow: scroll;*/
+  /*overflow: hidden;  Evita que las imágenes se desborden del contenedor */
+}
+
+.carousel-caption img {
+  /*LOGO EN IMAGEN AL LADO DEL PARRAFO*/
+  max-width: 25vh;
+  /* La imagen se adapta al ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  position: absolute;
+  bottom: -90%;
+  /* Alinea la parte inferior del logo */
+  right: 0%;
+  /* Alinea la parte derecha del logo */
+  /*margin-top: 1000px;
+  /* Ajusta el espacio entre los párrafos y la imagen según sea necesario */
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h2 {
+  /*padding: 10px 0px;
+  /* Espaciado interno */
+  text-align: left;
+  font-size: 2.1rem;
+  /* Ajusta el tamaño del texto según tus preferencias */
+  /*line-height: 1;
+  /* Ajusta el espaciado entre líneas según tus preferencias */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Estilos para los párrafos del carousel */
+.carousel-caption p {
+  /*color: white;
+  /* Color del texto */
+  /*padding: 0px 0px;
+  /* Espaciado interno */
+  font-size: 1.5rem;
+  /* Ajusta el tamaño del texto según tus preferencias */
+  /*flex-direction: column;
+  font-weight: 500;
+  /*font-family: 'Bebas Neue', sans-serif;
+  /* Cambia 'TuFuenteAmigable' a la fuente deseada, google font */
+  text-align: left;
+  /*margin-bottom: 40px;*/
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+}
+
+/************************************** Reglas de medios para hacer estilos más responsivos ****************************/
+@media (max-width: 767px) {
+  html * {
+
+    font-size: 1rem;
+    flex-direction: column;
+    /* Ajusta el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .carousel-caption img {
+    max-width: 50%;
+    flex-direction: column;
+    /* Ajusta el tamaño del logo en pantallas más pequeñas */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    flex-direction: column;
+    /* Ajusta el tamaño del texto en pantallas más pequeñas */
+  }
+
+  .nosotros-section-right {
+    width: 100%;
+  }
+}
+
+/******************************************** SECCION NOSOTROS ***************************************/
+.separador-quienes-somos {
+  text-align: center;
+  padding: 30px 30px;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30%;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: bold;
+  /* Establece la negrita */
+  text-decoration: underline;
+  /* Subraya el texto */
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgb(235, 235, 235);
+  max-width: 100%;
+  /* Ajusta el ancho máximo según tus necesidades */
+  max-height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor */
+}
+
+.nosotros-section {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: CeraPro, sans-serif;
+  font-size: 17px;
+  padding: 50px 50px;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-section-left {
+  /*background: url(/img/img\ exterior\ planta.png);*/
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  /* Centra horizontalmente */
+  /* Ajusta el espaciado según tus preferencias */
+  /*margin-right: 10px;*/
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor*/
+  order: 1;
+  /* Cambia el orden, para que aparezca primero en pantallas pequeñas */
+}
+
+
+.nosotros-section-left img {
+  width: 100%;
+  height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.nosotros-section-right {
+  /*box-sizing: border-box;*/
+  /* Incluye el relleno en el ancho total */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /* Alinea el texto al centro */
+  order: 2;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+}
+
+.nosotros-section-right h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 5px;
+}
+
+.nosotros-section-right p {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.nosotros-section-right .datos-planta {
+  padding: 2px;
+  display: flex;
+  font-family: 'Bebas Neue', sans-serif;
+  /*flex-direction: row;*/
+  justify-content: flex;
+  /*flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  text-align: center;
+}
+
+.nosotros-section-right .datos-planta p {
+  display: flex;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.button {
+  background-color: rgba(219, 0, 0, 0.815);
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  /* Agrega una transición suave al color de fondo */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: darkred;
+  /* Cambia el color de fondo al pasar el puntero */
+}
+
+/********************************************** SECCION SERVICIOS *********************************************/
+
+.separador-servicios {
+  text-align: center;
+  padding: 50px 0;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30%;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: bold;
+  /* Establece la negrita */
+  text-decoration: underline;
+  /* Subraya el texto */
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgba(235, 235, 235, 0.788);
+}
+
+/* Estilos para la sección de iconos */
+.iconos-servicios {
+  display: flex;
+  justify-content: space-around;
+  /* Distribuye los elementos uniformemente a lo largo del contenedor */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  padding: 10px 10%;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+}
+
+/* Estilos para cada ícono y texto */
+.iconos-servicios a {
+  text-align: center;
+  flex: 1;
+  /* Hace que cada ícono ocupe el mismo espacio en la fila */
+  padding: 1px;
+  /* Añade un poco de espacio entre los íconos */
+}
+
+.iconos-servicios img {
+  max-width: 90px;
+  /* Asegura que la imagen no se desborde del contenedor padre */
+  height: 90px;
+  /* Mantiene la proporción de la imagen */
+}
+
+.iconos-servicios p {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 10px;
+  /* Añade espacio entre la imagen y el texto */
+  font-size: 25px;
+}
+
+/* Estilos para centrar el botón */
+.section-button-servicios {
+  text-align: center;
+  margin-top: 20px;
+  /* Ajusta el espacio entre los iconos y el botón */
+}
+
+.section-button-servicios a {
+  display: inline-block;
+  /* Hace que el botón sea un elemento en línea para centrarlo */
+}
+
+/********************************************** SECCION CLIENTES LOGOS*********************************************/
+.separador-iconos-clientes {
+  text-align: center;
+  padding: 50px 50px;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30%;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: bold;
+  /* Establece la negrita */
+  text-decoration: underline;
+  /* Subraya el texto */
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgba(235, 235, 235, 0.788);
+}
+
+.slider {
+  height: auto;
+  margin: auto;
+  width: 80vw;
+  overflow: hidden;
+  padding: 80px;
+  /* Ajusta el padding según tus necesidades */
+}
+
+.slider .slider-track {
+  display: flex;
+  animation: infinite 10s linear infinite;
+  /*-webkit-animation: infinite 10s linear infinite;*/
+  width: calc(180px * 18);
+  transition: transform 1s ease-in-out;
+  /* Agrega una transición suave al reinicio */
+}
+
+.slider .slider-track .slide {
+  width: 200px;
+  padding: 20px;
+}
+
+.slider .slider-track .slide img {
+  max-width: 100%;
+  height: auto;
+  /*margin-left: 5px;
+  margin-right: 5px;*/
+}
+
+@keyframes infinite {
+  0% {
+    /*-webkit-transform: translateX(0);*/
+    transform: translateX(0);
+  }
+
+  100% {
+    /*-webkit-transform: translateX(calc(-100px*13));*/
+    transform: translateX(calc(-100px*13));
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .slider .slider-track {
+    flex-direction: row;
+    /* Cambia la dirección a fila en dispositivos móviles */
+    width: calc(200px * 12);
+    /* Ajusta el ancho de la pista para dispositivos móviles */
+  }
+}
+
+/********************************************** SECCION UBICACION *********************************************/
+
+.ubicacion-puntosFronterizos {
+  display: flex;
+  font-family: CeraPro, sans-serif;
+  font-size: 17px;
+  overflow: hidden;
+}
+
+/* Estilos para la parte izquierda (mapa) */
+.ubicacion-puntosFronterizos .ubicacion-left {
+  width: 50%;
+  height: auto;
+  order: 1;
+}
+
+.ubicacion-puntosFronterizos .ubicacion-left iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos para la parte derecha (imagen) */
+.ubicacion-puntosFronterizos .ubicacion-right {
+  max-width: 50%;
+  max-height: 100%;
+  order: 2;
+}
+
+.ubicacion-right .zoomable-image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ubicacion-right img.zoomable-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ubicacion-right .view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ubicacion-right .zoomable-image-container:hover .view-button {
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay-content {
+  text-align: center;
+  position: relative;
+  /* Agrega posición relativa al contenido */
+}
+
+.full-image {
+  width: 100%;
+  height: 97vh;
+  object-fit: cover;
+}
+
+.close-overlay {
+  font-family: CeraPro, sans-serif;
+  background: none;
+  border: none;
+  color: rgba(235, 1, 1, 0.856);
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: oblique;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 7%;
+}
+
+.ubicacion-puntosFronterizos .ubicacion-right:hover {
+  transform: scale(1.06);
+  transition: 0.7s;
+}
+
+
+/* Reglas de medios para hacerlo responsive */
+@media screen and (max-width: 768px) {
+  .ubicacion-puntosFronterizos {
+    flex-direction: column;
+  }
+
+  .ubicacion-puntosFronterizos .ubicacion-left,
+  .ubicacion-puntosFronterizos .ubicacion-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .full-image {
+    padding: 15px;
+    /* Agrega un poco de espacio alrededor de la imagen en pantallas más pequeñas */
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+  }
+}
+
+/********************************************** SECCION FOOTER *********************************************/
+.footer-section {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+  text-align: center;
+  padding: 30px 10vw;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
+}
+
+
+.footer-contacto-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* Centra verticalmente */
+  width: 100%;
+  height: auto;
+  align-items: right;
+  text-align: right;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  order: 2;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+}
+
+.footer-contacto-planta {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* Centra verticalmente */
+  align-items: left;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: left;
+  /* Alinea el texto al centro */
+  text-align: left;
+  order: 1;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+}
+
+.footer-creds {
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
+}
+
+.footer-creds img {
+  height: 8vh;
+  width: 12vh;
+}
+
+/* Media query para hacer responsive */
+@media (min-width: 768px) {
+  .footer-contacto-admin {
+    width: 100%
+  }
+
+  .footer-creds {
+    width: 100%;
+  }
+}
+
+
+
+

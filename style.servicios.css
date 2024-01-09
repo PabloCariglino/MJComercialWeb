@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html * {
+  margin: 0;
+  padding: 0;
+
+}
+
+/**************************************** ESTILOS PARA EL NAVBAR ***************************************/
+.navbar {
+  /*background-color:rgb(255, 255, 255);  Cambia "yourColor" al color de fondo deseado */
+  background-color: transparent !important;
+  color: #ffffff !important;
+  /* Letras blancas en estado inicial */
+  font-family: CeraPro, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+  font-size: 1.3vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000 !important;
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo para los elementos del menú */
+.navbar-nav .nav-item .nav-link {
+  color: rgb(0, 0, 0);
+  /* Cambia "tuColor" al color de texto deseado */
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Establece el estilo para el navbar cuando haces scroll */
+.navbar-dark-on-scroll .navbar {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  /* Letras negras al hacer scroll */
+}
+
+/* Estilo para las letras del menú al hacer scroll */
+.navbar-dark-on-scroll .navbar-light .navbar-nav .nav-link {
+  color: #000000 !important;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
+  color: rgb(0, 0, 0) !important;
+
+  /* Letras blancas en estado inicial */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-item .nav-link.active {
+  color: rgb(255, 255, 255);
+  /* Cambia "otroColor" al color deseado para el enlace activo */
+}
+
+/* Estilo para el botón de alternancia en dispositivos móviles */
+.navbar-toggler-icon {
+  background-color: transparent;
+  /* Cambia "colorBoton" al color deseado para el botón de alternancia */
+}
+
+/*-----------------------------------------BANNER SERVICIOS----------------------------------------------*/
+.banner-servicios {
+  flex: auto;
+  width: auto;
+  /*height: 47vw;*/
+  height: 50vh;
+  /*Ajusta al total de la Ventana en todos los dispositivos*/
+  max-width: 100%;
+  /*Ajusta el ancho máximo según tus necesidades */
+  max-height: 100%;
+  /*Ajusta la altura automáticamente para mantener la proporción*/
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+  /* Para asegurar que la imagen no sobresalga del contenedor */
+  position: relative;
+}
+
+/* Asegurar que la imagen ocupe todo el contenedor */
+.banner-servicios img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hacer que la imagen sea responsive */
+@media (max-width: 767px) {
+
+  /* Estilos para pantallas pequeñas */
+  .banner-servicios {
+    height: auto;
+    /* Permitir que la altura sea automática en pantallas más pequeñas */
+  }
+}
+
+.intro-desarrollo h2 {
+  text-align: center;
+  padding: 18px 90px;
+  font-weight: 700
+}
+
+.intro-desarrollo p {
+  text-align: center;
+  padding: 10px 90px;
+
+  font-weight: 600
+}
+
+
+
+/********************************************** SECCION SERVICIOS *********************************************/
+
+/* Estilos para la sección de iconos */
+.iconos-servicios {
+  display: flex;
+  justify-content: space-around;
+  /* Distribuye los elementos uniformemente a lo largo del contenedor */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  padding: 10px 20%;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+}
+
+/* Estilos para cada ícono y texto */
+.iconos-servicios a {
+  text-align: center;
+  flex: 1;
+  /* Hace que cada ícono ocupe el mismo espacio en la fila */
+  padding: 1px;
+  /* Añade un poco de espacio entre los íconos */
+}
+
+.iconos-servicios img {
+  max-width: 70px;
+  /* Asegura que la imagen no se desborde del contenedor padre */
+  height: 70px;
+  /* Mantiene la proporción de la imagen */
+}
+
+.iconos-servicios p {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 8px;
+  /* Añade espacio entre la imagen y el texto */
+  font-size: 20px;
+}
+
+/************************************* SECCION TARJETAS SERVICIOS VAGONES****************************************/
+.cartas-vagones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 90px;
+  /* Ajusta el espaciado según sea necesario */
+}
+
+/* Estilo para cada tarjeta */
+.card {
+  width: 100%;
+  /* Ocupa hasta el 45% del contenedor principal */
+  margin-bottom: 30px;
+  /* Espaciado entre tarjetas */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5 5 20px rgba(0, 0, 0, 1);
+  transform: translateY(-3%);
+}
+
+/* Estilo para las imágenes en las tarjetas */
+.card img {
+  max-width: 100%;
+  /* Hace que la imagen sea completamente responsive */
+  height: auto;
+  width: auto;
+}
+
+/* Ajustar estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+    /* Ocupa el 100% en pantallas más pequeñas */
+  }
+}
+
+
+
+.btn {
+  background-color: rgba(219, 0, 0, 0.815);
+  color: white;
+  padding: 4px 40px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  /* Agrega una transición suave al color de fondo */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 10px;
+  /* Ajusta según sea necesario */
+
+  transform: translateX(-50%);
+
+}
+
+.btn:hover {
+  background-color: darkred;
+  /* Cambia el color de fondo al pasar el puntero */
+}
+
+.card-body p {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.separador-repuestos {
+  text-align: center;
+  padding: 30px 30px;
+  /* Ajusta el espaciado superior e inferior según tus preferencias */
+  font-size: 30%;
+  /* Ajusta el tamaño de la fuente según tus preferencias */
+  font-weight: bold;
+  /* Establece la negrita */
+  text-decoration: underline;
+  /* Subraya el texto */
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: rgb(235, 235, 235);
+  max-width: 100%;
+  /* Ajusta el ancho máximo según tus necesidades */
+  max-height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  object-fit: cover;
+  /* Mantiene la relación de aspecto y cubre el contenedor */
+}
+
+/* Estilo para el contenedor de la imagen */
+.imagen-respuestos-ferroviarios {
+  text-align: center; /* Centra la imagen horizontalmente */
+  margin-bottom: 18px;
+}
+
+/* Estilo para la imagen */
+.imagen-respuestos-ferroviarios img {
+  max-width: 100%; /* Hace que la imagen sea completamente responsive */
+  height: auto;
+  display: inline-block; /* Alinea la imagen correctamente */
+}
+
+.banner-planta-puerta {
+  flex: auto;
+  width: auto;
+  /*height: 47vw;*/
+  height: 50vh;
+  /*Ajusta al total de la Ventana en todos los dispositivos*/
+  max-width: 100%;
+  /*Ajusta el ancho máximo según tus necesidades */
+  max-height: 100%;
+  /*Ajusta la altura automáticamente para mantener la proporción*/
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+  /* Para asegurar que la imagen no sobresalga del contenedor */
+  position: relative;
+}
+
+/* Asegurar que la imagen ocupe todo el contenedor */
+.banner-planta-puerta img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* Hacer que la imagen sea responsive */
+@media (max-width: 767px) {
+
+  /* Estilos para pantallas pequeñas */
+  .banner-planta-puerta {
+    height: auto;
+    /* Permitir que la altura sea automática en pantallas más pequeñas */
+  }
+
+  
+}
+
+/********************************************** SECCION FOOTER *********************************************/
+.footer-section {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+  text-align: center;
+  padding: 30px 10vw;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
+}
+
+
+.footer-contacto-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* Centra verticalmente */
+  width: 100%;
+  height: auto;
+  align-items: right;
+  text-align: right;
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  order: 2;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+}
+
+.footer-contacto-planta {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* Centra verticalmente */
+  align-items: left;
+  /* Centra horizontalmente */
+  width: 100%;
+  height: auto;
+  text-align: left;
+  /* Alinea el texto al centro */
+  text-align: left;
+  order: 1;
+  /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+  flex-wrap: wrap;
+  /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  width: 50%;
+  max-width: 400px;
+  margin-bottom: 1px;
+}
+
+.footer-creds {
+  text-align: center;
+  padding: 4px 10px;
+  font-size: 14px;
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: #fff;
+  /* Texto blanco */
+}
+
+.footer-creds img {
+  height: 8vh;
+  width: 12vh;
+}
+
+/* Media query para hacer responsive */
+@media (min-width: 768px) {
+  .footer-contacto-admin {
+    width: 100%
+  }
+
+  .footer-creds {
+    width: 100%;
+  }
+}

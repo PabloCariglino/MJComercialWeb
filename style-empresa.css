@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*--------------------------------------------------VISTA EMPRESA----------------------------------------------------*/
+html * {
+    margin: 0;
+    padding: 0;
+
+}
+
+/**************************************** ESTILOS PARA EL NAVBAR ***************************************/
+.navbar {
+    /*background-color:rgb(255, 255, 255);  Cambia "yourColor" al color de fondo deseado */
+    background-color: transparent !important;
+    color: #ffffff !important;
+    /* Letras blancas en estado inicial */
+    font-family: CeraPro, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+    font-size: 1.3vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo para los elementos del menú */
+.navbar-nav .nav-item .nav-link {
+    color: rgb(0, 0, 0);
+    /* Cambia "tuColor" al color de texto deseado */
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Establece el estilo para el navbar cuando haces scroll */
+.navbar-dark-on-scroll .navbar {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    /* Letras negras al hacer scroll */
+}
+
+/* Estilo para las letras del menú al hacer scroll */
+.navbar-dark-on-scroll .navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+}
+
+.navbar-transparent {
+    background-color: transparent !important;
+    color: rgb(0, 0, 0) !important;
+
+    /* Letras blancas en estado inicial */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-item .nav-link.active {
+    color: rgb(255, 255, 255);
+    /* Cambia "otroColor" al color deseado para el enlace activo */
+}
+
+/* Estilo para el botón de alternancia en dispositivos móviles */
+.navbar-toggler-icon {
+    background-color: transparent;
+    /* Cambia "colorBoton" al color deseado para el botón de alternancia */
+}
+
+/* Resetear márgenes y padding en el cuerpo de la página */
+
+
+/*-----------------------------------------BANNER PLANTA----------------------------------------------*/
+.banner-planta {
+    flex: auto;
+    width: auto;
+    /*height: 47vw;*/
+    height: 50vh;
+    /*Ajusta al total de la Ventana en todos los dispositivos*/
+    max-width: 100%;
+    /*Ajusta el ancho máximo según tus necesidades */
+    max-height: 100%;
+    /*Ajusta la altura automáticamente para mantener la proporción*/
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+    /* Para asegurar que la imagen no sobresalga del contenedor */
+    position: relative;
+}
+
+/* Asegurar que la imagen ocupe todo el contenedor */
+.banner-planta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hacer que la imagen sea responsive */
+@media (max-width: 767px) {
+
+    /* Estilos para pantallas pequeñas */
+    .banner-planta {
+        height: auto;
+        /* Permitir que la altura sea automática en pantallas más pequeñas */
+    }
+
+    .banner-equipo {
+        height: auto;
+    }
+}
+
+/*-----------------------------------------PRESENTACION DATOS----------------------------------------------*/
+.presentacion-datos {
+
+    text-align: center;
+    padding: 45px 90px;
+    font-weight: 600;
+
+}
+
+/* Utilizar flexbox para colocar las tarjetas en una fila */
+.container-datos-magnitud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centrar las tarjetas horizontalmente */
+}
+
+/* Estilo de cada tarjeta */
+.tarjeta-datos-magnitud {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 250px;
+    margin: 20px;
+    padding: 10px 10px;
+    border: 1px solid #fdfdfd3d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.493);
+    font-weight: 700;
+}
+
+.tarjeta-datos-magnitud span {
+    color: rgba(255, 0, 0, 0.671);
+}
+
+/* Ajustar estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .tarjeta-datos-magnitud {
+        max-width: 100%;
+    }
+}
+
+
+
+/*-----------------------------------------INFO EMPRESA----------------------------------------------*/
+.info-empresa1,
+.info-empresa2,
+.info-empresa3 {
+    padding: 10px 120px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+#info-empresa-img1,
+#info-empresa-img2,
+#info-empresa-img3 {
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+    /*object-fit: cover;*/
+    width: 100vh;
+height: 50vh;
+}
+
+#info-empresa-img1 {
+    float: left;
+   
+    max-width: auto;
+    max-height: auto;
+   
+
+}
+
+#info-empresa-img2 {
+    float: right;
+    
+    max-width: auto;
+    max-height: auto;
+  
+}
+
+#info-empresa-img3 {
+    float: left;
+    max-width: auto;
+    max-height: auto;
+  
+}
+
+.container-info-empresa p {
+    padding: 1px 50px;
+    font-weight: 600;
+}
+.container-info-empresa h2 {
+    padding: 1px 50px;
+    font-weight: 700;
+}
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media (max-width: 768px) {
+
+    .info-empresa1,
+    .info-empresa2,
+    .info-empresa3 {
+        flex-wrap: wrap;
+
+    }
+
+    .info-empresa .container-info-empresa {
+
+        align-items: center;
+        text-align: center;
+
+    }
+}
+
+/*---------------------------------------------NUESTRO EQUIPO------------------------------------------------*/
+
+.banner-equipo {
+
+    flex: auto;
+    width: auto;
+    /*height: 47vw;*/
+    height: auto;
+    /*Ajusta al total de la Ventana en todos los dispositivos*/
+    max-width: 100%;
+    /*Ajusta el ancho máximo según tus necesidades */
+    max-height: 100%;
+    /*Ajusta la altura automáticamente para mantener la proporción*/
+   /* object-fit: cover;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+    /* Para asegurar que la imagen no sobresalga del contenedor */
+    position: relative;
+    align-items: center;
+}
+
+/* Asegurar que la imagen ocupe todo el contenedor */
+.banner-equipo img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/*------------------------------------------INFO EQUIPO---------------------------------------------------*/
+
+/* Estilo para el contenedor principal */
+.info-equipo {
+
+
+
+    align-items: center;
+    padding: 40px 100px;
+    /* Ajusta el espaciado según sea necesario */
+    justify-content: center;
+
+}
+
+/* Estilo para el carrusel */
+#carouselExampleIndicators1 {
+
+    /* Ocupa hasta el 50% del contenedor principal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#carouselExampleIndicators1 .carousel-inner img {
+
+    width: 60vh;
+
+    height: 70vh;
+    /*Ajusta al total de la Ventana en todos los dispositivos*/
+    max-width: 100%;
+    /*Ajusta el ancho máximo según tus necesidades */
+    max-height: 100%;
+    /*Ajusta la altura automáticamente para mantener la proporción*/
+    object-fit: cover;
+    /* Mantiene la relación de aspecto y cubre el contenedor*/
+    align-items: center;
+
+}
+
+/* Estilo para el texto */
+.info-equipo p {
+    max-width: 90%;
+    /* Ocupa hasta el 45% del contenedor principal */
+    text-align: center;
+    padding: 5px 10px;
+
+
+}
+
+.info-equipo-parrafo {
+    text-align: center;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Ajustar estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .info-equipo {
+        /* flex-direction: column;*/
+        align-items: center;
+
+    }
+
+    #carouselExampleIndicators1 .carousel-inner img {
+
+        width: 60vh;
+
+        height: 50vh;
+        /*Ajusta al total de la Ventana en todos los dispositivos*/
+        max-width: 100%;
+        /*Ajusta el ancho máximo según tus necesidades */
+        max-height: 100%;
+        /*Ajusta la altura automáticamente para mantener la proporción*/
+        object-fit: cover;
+        /* Mantiene la relación de aspecto y cubre el contenedor*/
+        align-items: center;
+
+    }
+
+    #carouselExampleIndicators1,
+    .info-equipo p {
+        max-width: 100%;
+        /* Ocupa el 100% en pantallas más pequeñas */
+        margin-bottom: 20px;
+        /* Espaciado entre elementos en pantallas pequeñas */
+        text-align: center;
+    }
+}
+
+/*------------------------------------------SLIDE FOTOS ANTIGUAS EQUIPO---------------------------------------------*/
+
+.separador-historia {
+    text-align: center;
+    padding: 25px 50px;
+    /* Ajusta el espaciado superior e inferior según tus preferencias */
+    font-size: 30%;
+    /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-weight: bold;
+    /* Establece la negrita */
+    text-decoration: underline;
+    /* Subraya el texto */
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: rgba(235, 235, 235, 0.788);
+  }
+
+#carouselExampleFade img {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+.img-slide-antiguo{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/********************************************** SECCION FOOTER *********************************************/
+.footer-section {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    /*align-items: flex-start;*/
+    text-align: center;
+    padding: 30px 10vw;
+    font-size: 14px;
+    background-color: #333;
+    /* Fondo gris oscuro */
+    color: #fff;
+    /* Texto blanco */
+}
+
+
+.footer-contacto-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    /* Centra verticalmente */
+    width: 100%;
+    height: auto;
+    align-items: right;
+    text-align: right;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+    order: 2;
+    /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 1px;
+}
+
+.footer-contacto-planta {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* Centra verticalmente */
+    align-items: left;
+    /* Centra horizontalmente */
+    width: 100%;
+    height: auto;
+    text-align: left;
+    /* Alinea el texto al centro */
+    text-align: left;
+    order: 1;
+    /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 1px;
+}
+
+.footer-creds {
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 14px;
+    background-color: #333;
+    /* Fondo gris oscuro */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.footer-creds img {
+    height: 8vh;
+    width: 12vh;
+}
+
+/* Media query para hacer responsive */
+@media (width: 425px) {
+
+    .footer-section {
+        flex-direction: column;
+        /* Cambia a disposición de columna en pantallas pequeñas */
+        text-align: center;
+        /* Centra el contenido en pantallas pequeñas */
+    }
+
+
+    .footer-contacto-admin {
+        width: 100%;
+
+    }
+
+    .footer-contacto-planta {
+        width: 100%;
+
+    }
+
+    .footer-creds {
+        width: 100%;
+    }
+
+    .footer-contacto-planta,
+    .footer-contacto-admin {
+        margin-bottom: 20px;
+        /* Espaciado entre secciones en pantallas pequeñas */
+    }
+}
