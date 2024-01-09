@@ -368,12 +368,33 @@ html * {
 }
 
 /* Media query para hacer responsive */
-@media (min-width: 768px) {
+@media screen and (max-width: 425px) {
+
+  .footer-section {
+      flex-direction: column;
+      /* Cambia a disposición de columna en pantallas pequeñas */
+      text-align: center;
+      /* Centra el contenido en pantallas pequeñas */
+  }
+
+
   .footer-contacto-admin {
-    width: 100%
+      width: 100%;
+
+  }
+
+  .footer-contacto-planta {
+      width: 100%;
+
   }
 
   .footer-creds {
-    width: 100%;
+      width: 100%;
+  }
+
+  .footer-contacto-planta,
+  .footer-contacto-admin {
+      margin-bottom: 20px;
+      /* Espaciado entre secciones en pantallas pequeñas */
   }
 }

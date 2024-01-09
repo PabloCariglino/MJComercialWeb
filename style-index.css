@@ -213,18 +213,6 @@ html * {
   order: 1;
   /* Cambia el orden, para que aparezca primero en pantallas pequeñas */
 }
-
-
-.nosotros-section-left img {
-  width: 100%;
-  height: auto;
-  /* Ajusta la altura automáticamente para mantener la proporción */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
 .nosotros-section-right {
   /*box-sizing: border-box;*/
   /* Incluye el relleno en el ancho total */
@@ -240,6 +228,16 @@ html * {
   /* Alinea el texto al centro */
   order: 2;
   /* Cambia el orden, para que aparezca despues en pantallas pequeñas */
+}
+
+.nosotros-section-left img {
+  width: 100%;
+  height: auto;
+  /* Ajusta la altura automáticamente para mantener la proporción */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .nosotros-section-right h3 {
@@ -615,16 +613,36 @@ html * {
 }
 
 /* Media query para hacer responsive */
-@media (min-width: 768px) {
+@media screen and (max-width: 425px) {
+
+  .footer-section {
+      flex-direction: column;
+      /* Cambia a disposición de columna en pantallas pequeñas */
+      text-align: center;
+      /* Centra el contenido en pantallas pequeñas */
+  }
+
+
   .footer-contacto-admin {
-    width: 100%
+      width: 100%;
+
+  }
+
+  .footer-contacto-planta {
+      width: 100%;
+
   }
 
   .footer-creds {
-    width: 100%;
+      width: 100%;
+  }
+
+  .footer-contacto-planta,
+  .footer-contacto-admin {
+      margin-bottom: 20px;
+      /* Espaciado entre secciones en pantallas pequeñas */
   }
 }
-
 
 
 
