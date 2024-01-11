@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /*--------------------------------------------------VISTA EMPRESA----------------------------------------------------*/
 html * {
     margin: 0;
@@ -103,6 +104,7 @@ html * {
 
     .banner-equipo {
         height: auto;
+
     }
 }
 
@@ -145,6 +147,15 @@ html * {
     .tarjeta-datos-magnitud {
         max-width: 100%;
     }
+
+    #info-empresa-img1,
+    #info-empresa-img2,
+    #info-empresa-img3 {
+       
+        width: 10px;
+        height: 10px;
+    }
+
 }
 
 
@@ -171,42 +182,44 @@ html * {
     margin: 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
     /*object-fit: cover;*/
-    width: 100vh;
-height: 50vh;
+    width:1000px;
+    height: 40vh;
 }
 
 #info-empresa-img1 {
     float: left;
-   
+
     max-width: auto;
     max-height: auto;
-   
+
 
 }
 
 #info-empresa-img2 {
     float: right;
-    
+
     max-width: auto;
     max-height: auto;
-  
+
 }
 
 #info-empresa-img3 {
     float: left;
     max-width: auto;
     max-height: auto;
-  
+
 }
 
 .container-info-empresa p {
     padding: 1px 50px;
     font-weight: 600;
 }
+
 .container-info-empresa h2 {
     padding: 1px 50px;
     font-weight: 700;
 }
+
 /* Media query para ajustar el diseño en pantallas más pequeñas */
 @media (max-width: 768px) {
 
@@ -238,7 +251,7 @@ height: 50vh;
     /*Ajusta el ancho máximo según tus necesidades */
     max-height: 100%;
     /*Ajusta la altura automáticamente para mantener la proporción*/
-   /* object-fit: cover;*/
+    /* object-fit: cover;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
     overflow: hidden;
@@ -250,7 +263,7 @@ height: 50vh;
 /* Asegurar que la imagen ocupe todo el contenedor */
 .banner-equipo img {
     width: 100%;
-    height: 50vh;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -361,7 +374,7 @@ height: 50vh;
     /* Subraya el texto */
     font-family: 'Bebas Neue', sans-serif;
     background-color: rgba(235, 235, 235, 0.788);
-  }
+}
 
 #carouselExampleFade img {
     display: flex;
@@ -369,7 +382,7 @@ height: 50vh;
     height: 80vh;
 }
 
-.img-slide-antiguo{
+.img-slide-antiguo {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -389,10 +402,10 @@ height: 50vh;
     /* Fondo gris oscuro */
     color: #fff;
     /* Texto blanco */
-  }
-  
-  
-  .footer-contacto-admin {
+}
+
+
+.footer-contacto-admin {
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -408,9 +421,9 @@ height: 50vh;
     width: 50%;
     max-width: 400px;
     margin-bottom: 1px;
-  }
-  
-  .footer-contacto-planta {
+}
+
+.footer-contacto-planta {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -429,9 +442,9 @@ height: 50vh;
     width: 50%;
     max-width: 400px;
     margin-bottom: 1px;
-  }
-  
-  .footer-creds {
+}
+
+.footer-creds {
     text-align: center;
     padding: 4px 10px;
     font-size: 14px;
@@ -439,41 +452,41 @@ height: 50vh;
     /* Fondo gris oscuro */
     color: #fff;
     /* Texto blanco */
-  }
-  
-  .footer-creds img {
+}
+
+.footer-creds img {
     height: 8vh;
     width: 12vh;
-  }
-  
-  /* Media query para hacer responsive */
-  @media screen and (max-width: 425px) {
-  
+}
+
+/* Media query para hacer responsive */
+@media screen and (max-width: 425px) {
+
     .footer-section {
         flex-direction: column;
         /* Cambia a disposición de columna en pantallas pequeñas */
         text-align: center;
         /* Centra el contenido en pantallas pequeñas */
     }
-  
-  
+
+
     .footer-contacto-admin {
         width: 100%;
-  
+
     }
-  
+
     .footer-contacto-planta {
         width: 100%;
-  
+
     }
-  
+
     .footer-creds {
         width: 100%;
     }
-  
+
     .footer-contacto-planta,
     .footer-contacto-admin {
         margin-bottom: 20px;
         /* Espaciado entre secciones en pantallas pequeñas */
     }
-  }
+}

@@ -555,6 +555,7 @@ html * {
   /* Fondo gris oscuro */
   color: #fff;
   /* Texto blanco */
+  
 }
 
 
@@ -574,6 +575,7 @@ html * {
   width: 50%;
   max-width: 400px;
   margin-bottom: 1px;
+  margin: 2px;
 }
 
 .footer-contacto-planta {
@@ -595,6 +597,7 @@ html * {
   width: 50%;
   max-width: 400px;
   margin-bottom: 1px;
+  margin-right: 1px;
 }
 
 .footer-creds {

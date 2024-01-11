@@ -191,6 +191,11 @@ html * {
     width: 100%;
     /* Ocupa el 100% en pantallas más pequeñas */
   }
+
+  .btn{
+    max-height: 5vh;
+    
+  }
 }
 
 
@@ -207,7 +212,7 @@ html * {
   align-items: center;
   /* Centra verticalmente los elementos */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
+ position: absolute;
   bottom: 10px;
   /* Ajusta según sea necesario */
 
