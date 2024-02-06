@@ -151,7 +151,7 @@ html * {
     #info-empresa-img1,
     #info-empresa-img2,
     #info-empresa-img3 {
-       
+
         width: 10px;
         height: 10px;
     }
@@ -182,7 +182,7 @@ html * {
     margin: 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
     /*object-fit: cover;*/
-    width:1000px;
+    width: 1000px;
     height: 40vh;
 }
 
@@ -227,7 +227,7 @@ html * {
     .info-empresa2,
     .info-empresa3 {
         flex-wrap: wrap;
-
+        padding: 0%;
     }
 
     .info-empresa .container-info-empresa {
@@ -238,7 +238,7 @@ html * {
     }
 }
 
-/*---------------------------------------------NUESTRO EQUIPO------------------------------------------------*/
+/*----------------------------------------BANNER NUESTRO EQUIPO---------------------------------------*/
 
 .banner-equipo {
 
@@ -272,10 +272,8 @@ html * {
 /* Estilo para el contenedor principal */
 .info-equipo {
 
-
-
     align-items: center;
-    padding: 40px 100px;
+    padding: 40px 190px;
     /* Ajusta el espaciado según sea necesario */
     justify-content: center;
 
@@ -291,15 +289,15 @@ html * {
 
 #carouselExampleIndicators1 .carousel-inner img {
 
-    width: 60vh;
+    width: 75vh;
 
-    height: 70vh;
+    height: 65vh;
     /*Ajusta al total de la Ventana en todos los dispositivos*/
     max-width: 100%;
     /*Ajusta el ancho máximo según tus necesidades */
     max-height: 100%;
     /*Ajusta la altura automáticamente para mantener la proporción*/
-    object-fit: cover;
+    
     /* Mantiene la relación de aspecto y cubre el contenedor*/
     align-items: center;
 
@@ -327,18 +325,19 @@ html * {
 }
 
 /* Ajustar estilos para pantallas más pequeñas */
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     .info-equipo {
         /* flex-direction: column;*/
         align-items: center;
+        padding: 0%;
 
     }
 
     #carouselExampleIndicators1 .carousel-inner img {
 
-        width: 60vh;
+        width: 90vh;
 
-        height: 50vh;
+        height: 65vh;
         /*Ajusta al total de la Ventana en todos los dispositivos*/
         max-width: 100%;
         /*Ajusta el ancho máximo según tus necesidades */
@@ -360,6 +359,7 @@ html * {
     }
 }
 
+
 /*------------------------------------------SLIDE FOTOS ANTIGUAS EQUIPO---------------------------------------------*/
 
 .separador-historia {
@@ -378,8 +378,15 @@ html * {
 
 #carouselExampleFade img {
     display: flex;
-    width: 100%;
-    height: 80vh;
+    width: 100vh;
+    height: 75vh;
+    max-width: 100%;
+    max-height: 30%;
+    object-fit: cover;
+    /* flex-wrap: nowrap;*/
+    overflow: scroll;
+
+
 }
 
 .img-slide-antiguo {
